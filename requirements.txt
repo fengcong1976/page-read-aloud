@@ -1,4 +1,4 @@
-# 书页朗读助手 依赖（版本钉自项目 venv site-packages dist-info）
+# 自助点读助手 依赖（版本钉自项目 venv site-packages dist-info）
 PyQt6==6.11.0
 PyQt6-Qt6==6.11.2
 pymupdf==1.28.2

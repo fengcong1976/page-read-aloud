@@ -1,6 +1,6 @@
 ﻿# -*- coding: utf-8 -*-
 """
-书页朗读助手
+自助点读助手
 功能: 导入图片或PDF文件, 在画面上拖拽选择区域, 自动OCR识别文字并使用edge-tts朗读
 """
 
@@ -74,11 +74,11 @@ def app_dir() -> str:
 def app_user_dir() -> str:
     """返回用户可写目录 (history/crash/debug 日志).
 
-    商店版 (MSIX) 安装目录只读, 统一写到 %LOCALAPPDATA%\\书页朗读助手;
+    商店版 (MSIX) 安装目录只读, 统一写到 %LOCALAPPDATA%\\自助点读助手;
     旧版把 history.json 放在 exe 同级, 首次运行时迁移过来.
     """
     base = os.path.join(os.environ.get("LOCALAPPDATA") or os.path.expanduser("~"),
-                        "书页朗读助手")
+                        "自助点读助手")
     os.makedirs(base, exist_ok=True)
     legacy_dir = (os.path.dirname(sys.executable) if getattr(sys, "frozen", False)
                   else os.path.dirname(os.path.abspath(__file__)))
@@ -125,7 +125,7 @@ from about_dialog import show_about
 # 常量与配置
 # ============================================================
 
-APP_TITLE = "书页朗读助手"
+APP_TITLE = "自助点读助手"
 
 # 缺省发音人: 美式英语 (点读场景以英文课本为主; 用户手选后自动记住)
 DEFAULT_VOICE_ID = "en-US-AriaNeural"
@@ -3528,7 +3528,7 @@ class MainWindow(QMainWindow):
     # 历史记录持久化 (history.json)
     # ----------------------------------------------------------
     def _history_json_path(self) -> str:
-        """history.json 路径: 用户可写目录 (%LOCALAPPDATA%\\书页朗读助手)"""
+        """history.json 路径: 用户可写目录 (%LOCALAPPDATA%\\自助点读助手)"""
         return os.path.join(app_user_dir(), "history.json")
 
     def _read_history_json(self) -> dict:

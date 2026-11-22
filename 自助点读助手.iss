@@ -1,11 +1,11 @@
-﻿; 书页朗读助手 Inno Setup 安装包脚本
-; 编译：%LOCALAPPDATA%\Programs\Inno Setup 7\ISCC.exe 书页朗读助手.iss
+﻿; 自助点读助手 Inno Setup 安装包脚本
+; 编译：%LOCALAPPDATA%\Programs\Inno Setup 7\ISCC.exe 自助点读助手.iss
 
-#define MyAppName "书页朗读助手"
-#define MyAppVersion "1.0.0"
+#define MyAppName "自助点读助手"
+#define MyAppVersion "1.0.1"
 #define MyAppPublisher "深圳市创炫互动网络科技有限公司"
 #define MyAppURL "https://www.mrheedu.com"
-#define MyAppExeName "书页朗读助手.exe"
+#define MyAppExeName "自助点读助手.exe"
 
 [Setup]
 LicenseFile=LICENSE
@@ -20,7 +20,7 @@ DefaultDirName={localappdata}\Programs\{#MyAppName}
 DefaultGroupName={#MyAppName}
 DisableProgramGroupPage=yes
 OutputDir=installer_output
-OutputBaseFilename=书页朗读助手-Setup-{#MyAppVersion}
+OutputBaseFilename=自助点读助手-Setup-{#MyAppVersion}
 SetupIconFile=图标.ico
 Compression=lzma2
 SolidCompression=yes
