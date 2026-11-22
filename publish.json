@@ -2,17 +2,49 @@
     "app":  {
                 "slug":  "page-read-aloud",
                 "name":  "自助点读助手",
-                "description":  "自助点读助手是一款把纸质书、练习册和 PDF 变成“会说话的书”的桌面工具。导入照片或 PDF 后，在画面上框选任意段落，程序先用本地 OCR 识别文字，再用在线神经语音朗读；支持中英文与多语种发音人、语速调节、整页连读和点读模式。内置 ECDICT 英汉、CC-CEDICT 汉英与成语词典，框选单词即可查看释义。图片和 PDF 只在本机处理、不会上传；朗读时仅将框选出的文字发送到微软语音服务合成音频。开源许可 AGPL-3.0，源码：https://gitee.com/FC1976/page-read-aloud（GitHub 镜像：https://github.com/fengcong1976/page-read-aloud）。",
+                "description":  "自助点读助手是一款把纸质书、练习册和 PDF 变成“会说话的书”的 Windows 桌面工具。导入照片或 PDF 后，在画面上框选任意段落，程序先用本地 OCR 识别文字，再用在线神经语音朗读；支持中英文与多语种发音人、语速调节、整页连读和全屏点读。识别结果可编辑，点读框能拆分、合并、插框和自动填充；内置 ECDICT 英汉、CC-CEDICT 汉英与成语词典，打开深度学习即可查看逐词释义和整段翻译。图片、PDF 和文字识别都在本机完成，不会上传；朗读时仅将框选文字发送到微软语音服务，整段翻译发送到在线翻译服务。开源许可 AGPL-3.0，源码：https://gitee.com/FC1976/page-read-aloud（GitHub 镜像：https://github.com/fengcong1976/page-read-aloud）。",
                 "category":  "edu",
                 "platform":  "windows",
                 "license":  "AGPL-3.0",
                 "source_url":  "https://gitee.com/FC1976/page-read-aloud",
-                "icon":  "图标.png"
+                "icon":  "图标.png",
+                "screenshots":  [
+                                    "截图/shot-01.png",
+                                    "截图/shot-02.png",
+                                    "截图/shot-03.png",
+                                    "截图/shot-04.png"
+                                ],
+                "features":  [
+                                 "导入 JPG、PNG、BMP、WEBP、TIF 图片，并自动列出同文件夹图片的缩略图",
+                                 "导入 PDF 逐页浏览，左侧缩略图快速定位，支持上一页、下一页与页码跳转",
+                                 "在画面上拖拽框选，一页可框选多个区域，每个区域生成一个点读框",
+                                 "本机 OCR 识别中文、英文与多语种文字，图片和 PDF 不上传",
+                                 "在线神经语音朗读，提供多语言发音人，启动后自动拉取可用发音人列表",
+                                 "语速可在 -50% 到 +50% 之间调节，支持自动朗读开关",
+                                 "全屏点读只显示页面，点图中已框选的内容即可朗读",
+                                 "整页连读按点读框顺序逐句朗读，画布与右侧列表同步高亮当前框",
+                                 "点读框列表与画面双向联动：单击定位、双击朗读、双击文本直接改字",
+                                 "点读框支持拆分、合并、上插框、下插框、填充空框、删除与清空",
+                                 "识别结果支持编辑、复制、清空，并可随时重新朗读",
+                                 "深度学习窗口左侧显示原文，右上逐词释义，右下整段翻译",
+                                 "内置 ECDICT 英汉、CC-CEDICT 汉英与 chinese-xinhua 成语词典，查词离线可用",
+                                 "整段翻译自动判断方向，中文较多时汉译英，否则英译汉",
+                                 "按文件与页码自动保存点读框和文字，下次打开同一文件自动恢复",
+                                 "支持适应窗口显示、隐藏缩略图面板和常用键盘快捷键",
+                                 "免管理员权限安装，程序装在当前用户目录，卸载干净"
+                             ]
             },
     "version":  {
                     "version_number":  "1.0.1",
                     "min_os_version":  "Windows 10",
                     "installer":  "installer_output/自助点读助手-Setup-1.0.1.exe",
-                    "release_notes":  "更名为「自助点读助手」，功能与 1.0.0 一致。"
-                }
+                    "external_url":  "https://chuangxuan.mrheedu.com/app/page-read-aloud/1.0.1/自助点读助手-Setup-1.0.1.exe",
+                    "file_size":  159158700,
+                    "release_notes":  "更名为「自助点读助手」；补充官网功能特点、界面截图与使用教程。"
+                },
+    "guides":  [
+                   "publish_guides/01-安装与基础点读.md",
+                   "publish_guides/02-点读框编辑与整页连读.md",
+                   "publish_guides/03-查词与深度学习.md"
+               ]
 }
