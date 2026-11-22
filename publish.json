@@ -1,0 +1,18 @@
+{
+    "app":  {
+                "slug":  "page-read-aloud",
+                "name":  "书页朗读助手",
+                "description":  "书页朗读助手是一款把纸质书、练习册和 PDF 变成“会说话的书”的桌面工具。导入照片或 PDF 后，在画面上框选任意段落，程序先用本地 OCR 识别文字，再用在线神经语音朗读；支持中英文与多语种发音人、语速调节、整页连读和点读模式。内置 ECDICT 英汉、CC-CEDICT 汉英与成语词典，框选单词即可查看释义。图片和 PDF 只在本机处理、不会上传；朗读时仅将框选出的文字发送到微软语音服务合成音频。开源许可 AGPL-3.0，源码见 Gitee。",
+                "category":  "edu",
+                "platform":  "windows",
+                "license":  "AGPL-3.0",
+                "source_url":  "https://gitee.com/FC1976/page-read-aloud",
+                "icon":  "图标.png"
+            },
+    "version":  {
+                    "version_number":  "1.0.0",
+                    "min_os_version":  "Windows 10",
+                    "installer":  "installer_output/书页朗读助手-Setup-1.0.0.exe",
+                    "release_notes":  "首个版本：图片/PDF 框选文字、离线 OCR、在线神经语音朗读、词典查词。"
+                }
+}

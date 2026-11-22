@@ -1,0 +1,10 @@
+# 书页朗读助手 依赖（版本钉自项目 venv site-packages dist-info）
+PyQt6==6.11.0
+PyQt6-Qt6==6.11.2
+pymupdf==1.28.2
+Pillow==12.3.0
+rapidocr-onnxruntime==1.4.4
+edge-tts==7.2.8
+
+# 打包
+pyinstaller==6.22.3
