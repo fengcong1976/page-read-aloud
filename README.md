@@ -22,3 +22,9 @@ AGPL-3.0，详见 LICENSE。第三方组件声明见 THIRD_PARTY_NOTICES.md。
 本仓库只包含源码，以下运行时资源体积较大，未纳入仓库：
 
 - 词典数据未入库：ECDICT（MIT）、CC-CEDICT（CC BY-SA 4.0）、chinese-xinhua 成语数据（MIT），下载后生成 ecdict.db / cedict.db / idiom.db 放入项目根目录。
+
+---
+
+## 更多免费软件
+
+本工具由深圳市创炫互动网络科技有限公司开发，官网提供免费安装包、图文教程，以及更多永久免费的 Windows 软件：**[www.mrheedu.com](https://www.mrheedu.com)**
